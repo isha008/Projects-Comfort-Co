@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Montserrat&family=Poppins&family=Space+Mono&display=swap');
+
+
+#nav_responsive {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color:black;
+    padding-bottom: 100%;
+    height:100vh;
+    padding-right: 30%;
+    z-index:3;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+}
+
+#nav_responsive.active{
+    display: block;
+    left: 0%;
+
+}
+#nav_responsive p {
+    font-size: 20px;
+    margin: 10px;
+    margin-bottom:55px;
+}
+
+
+.nav_close{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top:5px;
+    right: 10px;
+}
+
+/* Accordion */
+
+.plus{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    margin-left: 10px;
+    right: 20px;
+    top: 20px;
+    display: none;
+}
+.minus{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    margin-left: 10px;
+    right: 20px;
+    top: 20px;
+    display: none;
+ 
+}
+
+
+.section1,.section2,.section3{
+    position: relative;
+}
+.section_drop{
+    
+    display: block;  
+}
+
+.section_drop li {
+    list-style-type: none;
+    padding-top: 5px;
+}
+
+#accordian_one.active{
+    display: block;
+}
+
+@media only screen and (max-width:599px){
+    .plus{
+        display: block;
+    }
+    .section_drop{
+       
+        display: none;
+    }
+}
+
+#accordian_one.active , #accordian_two.active , #accordian_three.active{
+    display: flex;
+}
+
+/* Button Color Change */
+
+.arrivals{
+    position: relative;
+}
+.slick-prev{
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    z-index: 2;
+    padding: 5px;
+    height: 5%;
+    background-color: white;
+    border-radius: 15px;
+    
+}
+.slick-next{
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    z-index: 2;
+    padding: 5px;
+    height: 5%;
+    background-color: white;
+    border-radius: 15px;
+ 
+}
+
+.banner_scroll_image {
+    width: 100%;
+    
+}
+
+.banner2 {
+    overflow: hidden;
+}
+
+/*/////////////////////////////////  Pop Up  /////////////////////////////*/
+
+.popup{
+    width:100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    background-color: white;
+    height: 0;
+    border: 2px solid black;
+    box-sizing: border-box;
+    
+}
+
+.popup_text {
+    
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 50px 0;
+    height: 0;
+    font-size:20px;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+}
+.popup_button {
+    padding:  10px 15px;
+    font-size: 20px;
+    margin: 20px auto;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 20px;
+    border: 2px solid black;
+    
+}
+
+.popup_button:hover{
+    background-color: black;
+    color: white;
+}
+
+.popup_close{
+    height: 10%;
+    min-width: 2%;
+    float: right;
+    top:0;
+    z-index: 20;
+    padding-top: 10px;
+    padding-right: 10px;
+    /* position: absolute;
+    right: 10%;
+    top: 5%; */
+}
+
+@media only screen and (max-width:623px) {
+    .popup_text {
+        font-size: 14px;
+        padding: 40px 0;
+    }
+    .popup_button {
+        font-size: 16px;
+        padding: 8px 10px;
+        margin: 10px auto;
+    }
+    .popup{
+        max-height: 280px;
+    }
+    .popup p{
+        padding: 0 5px;
+    }
+}
+
+/*//////////////////////////////////////////////////////           Hamburger ///////////////////////////////////////*/
+
+.hamburger_close{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+
+.footer_duplicate {
+    display: none;
+}
+
+@media only screen and (max-width:600px) {
+    .footer_duplicate {
+        display: block;
+    }
+}
